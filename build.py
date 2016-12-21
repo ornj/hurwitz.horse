@@ -6,7 +6,7 @@ import base64
 
 with open('horse.jpg', 'rb') as img:
     img_data = img.read()
-    encoded = 'data:img/jpeg;base64,{}'.format(base64.b64encode(img_data))
+    encoded = 'data:image/jpeg;base64,{}'.format(base64.b64encode(img_data))
 
 with open('index.html', 'w+') as output:
     output.write("""
